@@ -1,0 +1,11 @@
+  <%= simple_form_for(@task) do |f| %>
+    <%= f.input :tile, class: 'input-group-text'%>
+    <%= f.input :details, class: 'input-group-text' %>
+    <% unless @task.new_record? %>
+    <div class="d-flex align-items-center">
+    <%= f.input_field :completed, as: :boolean, boolean_style: :inline %> <p id="completed-check">Completed</p>
+    </div>
+    <br>
+    <% end %>
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>

@@ -1,0 +1,53 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#details {
+  border: 1px solid #B8B8B8;
+  border-radius: 8px;
+  background-color: #f4f5f4;
+}
+
+#btn-edit {
+  margin-bottom: 0;
+  border: 1px solid #B8B8B8;
+  border-radius: 8px;
+}
+
+#details p {
+  padding: 10px 0 0 10px;
+}
+
+#completed {
+  margin-top: 15px;
+}
+
+#completed-check {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.link {
+  border-top: 1px solid #B8B8B8;
+  padding-top: 10px;
+}
+
+.delete {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: #e6e4e4;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#task {
+  margin-left: 5px;
+}

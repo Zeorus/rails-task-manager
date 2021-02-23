@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <div class="d-flex align-items-center">
+    <h1 class="flex-grow-1"><%= @task.tile %></h1>
+    <p id="btn-edit" class="btn"><a href="/tasks/<%= @task.id %>/edit"><i class="icon-pencil"></i> Edit this task</a></p>
+  </div>
+  <div id="details">
+    <p><%= @task.details %></p>
+  </div>
+  <div id="completed" class="d-flex">
+    <%= simple_form_for(@task) do |f| %>
+    <%= f.input_field :completed, as: :boolean %>
+    <% end %>
+    <%= @task.completed ? '<p class="ml-2">This task is completed.</p>'.html_safe : '<p class="ml-2">This task is not completed yet.</p>'.html_safe %>
+  </div>
+  <br>
+  <div class="link">
+    <%= link_to '<i class="icon-reply-all"></i> Back to list'.html_safe, "/" %>
+  </div>
+</div>
